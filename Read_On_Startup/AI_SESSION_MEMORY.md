@@ -8,7 +8,11 @@ Before performing ANY operations on the Hello-World project, the AI assistant MU
 
 ### REQUIRED STARTUP COMMAND:
 ```powershell
-cd "C:\Users\BookR\OneDrive\Documents\Warp\Projects\Hello-World"; $env:HOME = $env:USERPROFILE; if (!(Test-Path ".\render.exe")) { Copy-Item "..\..\render.exe" ".\render.exe" }
+# Use the universal session startup script (recommended)
+& "C:\Users\BookR\OneDrive\Documents\Warp\session-startup.ps1"
+
+# OR manual setup if needed:
+# cd "C:\Users\BookR\OneDrive\Documents\Warp\Projects\Hello-World"; $env:HOME = $env:USERPROFILE; if (!(Test-Path ".\render.exe")) { Copy-Item "..\..\render.exe" ".\render.exe" }
 ```
 
 ## 🎯 WHY THIS IS CRITICAL:
